@@ -1,0 +1,22 @@
+dotnet new webapp -o SignalRWebPack
+cd SignalRWebPack
+dotnet add package Microsoft.TypeScript.MSBuild
+
+npm init -y
+npm i -D -E --save-dev clean-webpack-plugin@3.0.0 css-loader@3.4.2 html-webpack-plugin@3.2.0 mini-css-extract-plugin@0.9.0 ts-loader@6.2.1 typescript@3.7.5 webpack@4.41.5 webpack-cli@3.3.10
+
+
+npm i --save-dev @types/node
+npm i --save @microsoft/signalr
+
+npm i --save react react-dom
+npm i --save-dev @types/react @types/react-dom
+
+
+** run: **
+client terminal:
+npm run c
+
+server terminal:
+npm run s
+
